@@ -26,6 +26,14 @@ module.exports = function(grunt) {
       }
     },
 
+    less: {
+      style: {
+        files: {
+          'build/css/style.css': 'less/style.less'
+        }
+      }
+    },
+
     browserSync: {
       build: {
         bsFiles: {
@@ -48,6 +56,15 @@ module.exports = function(grunt) {
       html: {
         files: '*.html',
         tasks: 'copy:html'
+      },
+      style: {
+        files: 'less/**/*.less',
+        tasks: [
+          'less'
+        ],
+        options: {
+          spawn: false
+        }
       }
     }
   });
@@ -55,7 +72,8 @@ module.exports = function(grunt) {
   grunt.registerTask('build', [
     'clean',
     'copy:html',
-    'copy:normalize'
+    'copy:normalize',
+    'less'
   ]);
 
   grunt.registerTask('serve', [
