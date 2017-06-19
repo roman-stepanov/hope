@@ -53,6 +53,17 @@ module.exports = function(grunt) {
       }
     },
 
+    csso: {
+      style: {
+        options: {
+          report: 'gzip'
+        },
+        files: {
+          'build/css/style.min.css': 'build/css/style.css'
+        }
+      }
+    },
+
     browserSync: {
       build: {
         bsFiles: {
@@ -80,7 +91,8 @@ module.exports = function(grunt) {
         files: 'less/**/*.less',
         tasks: [
           'less',
-          'postcss'
+          'postcss',
+          'csso'
         ],
         options: {
           spawn: false
@@ -94,7 +106,8 @@ module.exports = function(grunt) {
     'copy:html',
     'copy:normalize',
     'less',
-    'postcss'
+    'postcss',
+    'csso'
   ]);
 
   grunt.registerTask('serve', [
