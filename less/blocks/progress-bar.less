@@ -1,0 +1,51 @@
+.progress-bar {
+  margin: 0;
+  padding: 0px 0px 0px 0px;
+}
+
+.progress-bar__title {
+  color: @clr_black;
+  font-family: @fnt_Raleway;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 24px 0px 8px 0px;
+}
+
+.progress-bar__border {
+  border: 1px solid @clr_black;
+  margin: 0;
+  padding: 4px 4px 4px 4px;
+}
+
+.progress-bar__value {
+  position: relative;
+  height: 14px;
+  background-color: @clr_black;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -11px;
+    right: 0px;
+    border-right: 1px solid @clr_black;
+    height: 35px;
+  }
+
+  & span {
+    position: absolute;
+    top: -29px;
+    right: -20px;
+    color: @clr_black;
+    font-family: @fnt_Raleway;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+  }
+}
