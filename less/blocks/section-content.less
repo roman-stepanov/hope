@@ -1,0 +1,37 @@
+.section-content {
+
+}
+
+.section-content__container {
+  margin: 0 auto;
+  padding: 90px 0px 0px 0px;
+  width: @min-width;
+}
+
+.section-content__title-wrapper {
+  text-align: center;
+}
+
+.section-content__title {
+  display: inline-block;
+  position: relative;
+  color: @clr_black;
+  font-family: @fnt_Raleway;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0px 0px 0px 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 0px;
+    height: 25px;
+    border-left: 15px solid @clr_black;
+  }
+}
