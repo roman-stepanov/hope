@@ -1,0 +1,48 @@
+.slider {
+  margin: 0;
+  padding: 91px 0px 0px 0px;
+}
+
+.slider__slides {
+
+}
+
+.slider__slide {
+
+}
+
+.slider__controls {
+  text-align: center;
+  font-size: 0;
+  margin: 0;
+  padding: 46px 0px 0px 0px;
+}
+
+.slider__control-radio {
+  display: none;
+}
+
+.slider__control-label {
+  display: inline-block;
+  position: relative;
+  margin: 0px 3px 0px 0px;
+  padding: 0;
+  width: 8px;
+  height: 8px;
+  background-color: @clr_black;
+
+  &:hover {
+    background-color: @clr_gray;
+    cursor: pointer;
+  }
+}
+
+.slider__control-radio:checked + .slider__control-label::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 4px;
+  height: 4px;
+  background-color: @clr_white;
+}
