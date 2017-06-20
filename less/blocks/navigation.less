@@ -1,20 +1,20 @@
-.main-nav {
+.navigation {
 
 }
 
-.main-nav__wrapper {
+.navigation__wrapper {
   margin: 0;
-  padding: 17px 0px 0px 0px;
+  padding: 0;
 }
 
-.main-nav__items {
+.navigation__items {
   list-style: none;
   font-size: 0px;
   margin: 0;
   padding: 0;
 }
 
-.main-nav__item {
+.navigation__item {
   display: inline-block;
   position: relative;
   font-family: @fnt_Roboto;
@@ -37,7 +37,8 @@
 
   &--active {
     & a {
-      color: @clr_lightgray;
+      color: @clr_gray;
+      font-weight: 700;
     }
 
     &::after {

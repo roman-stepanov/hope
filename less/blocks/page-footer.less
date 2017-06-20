@@ -1,0 +1,288 @@
+.page-footer {
+  background-color: @clr_darkblue;
+}
+
+.page-footer__top-part {
+  margin: 0;
+  padding: 95px 0px 100px 0px;
+  border-bottom: 1px solid @clr_white;
+}
+
+.page-footer__bottom-part {
+  margin: 0;
+  padding: 18px 0px 18px 0px;
+}
+
+.page-footer__container {
+  margin: 0 auto;
+  padding: 0;
+  width: @min-width;
+
+  &--top-part {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &--bottom-part {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__fieldset {
+  margin: 0;
+  padding: 0;
+
+  &--small {
+    width: 270px;
+  }
+
+  &--big {
+    width: 400px;
+  }
+}
+
+.page-footer__title {
+  color: @clr_white;
+  font-family: @fnt_Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0px 0px 9px 0px;
+  border-bottom: 1px solid @clr_lightgray;
+
+  &--2level {
+    border-width: 0;
+    padding: 0px 0px 14px 7px;
+  }
+}
+
+.page-footer__about-text {
+  color: @clr_lightgray;
+  font-family: @fnt_DroidSerif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: justify;
+  margin: 0;
+  padding: 29px 0px 67px 0px;
+}
+
+.page-footer__social {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.page-footer__social-btn {
+  display: inline-block;
+  position: relative;
+  border: 1px solid @clr_lightgray;
+  width: 28px;
+  height: 28px;
+  background-color: @clr_darkblue;
+
+  &:hover {
+    background-color: @clr_white;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/social-networks.png");
+    background-repeat: no-repeat;
+  }
+
+  &--facebook {
+
+    &::before {
+      background-position: -5px -5px;
+    }
+
+    &:hover::before {
+      background-position: -35px -5px;
+    }
+  }
+
+  &--twitter {
+
+    &::before {
+      background-position: -65px -5px;
+    }
+
+    &:hover::before {
+      background-position: -95px -5px;
+    }
+  }
+
+  &--gplus {
+
+    &::before {
+      background-position: -125px -5px;
+    }
+
+    &:hover::before {
+      background-position: -155px -5px;
+    }
+  }
+
+  &--linkedin {
+
+    &::before {
+      background-position: -185px -5px;
+    }
+
+    &:hover::before {
+      background-position: -215px -5px;
+    }
+  }
+
+  &--behance {
+
+    &::before {
+      background-position: -245px -5px;
+    }
+
+    &:hover::before {
+      background-position: -275px -5px;
+    }
+  }
+
+  &--dribbble {
+
+    &::before {
+      background-position: -305px -5px;
+    }
+
+    &:hover::before {
+      background-position: -335px -5px;
+    }
+  }
+
+  &--pinterest {
+
+    &::before {
+      background-position: -365px -5px;
+    }
+
+    &:hover::before {
+      background-position: -395px -5px;
+    }
+  }
+}
+
+.page-footer__blog {
+  margin: 0;
+  padding: 32px 0px 0px 0px;
+}
+
+.page-footer__subscribe {
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  padding: 15px 0px 0px 0px;
+
+  & input {
+    display: inline-block;
+    flex-grow: 1;
+    color: @clr_lightgray;
+    font-family: @fnt_DroidSerif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0;
+    padding: 16px 10px 13px 10px;
+    border: 1px solid @clr_lightgray;
+    border-right-width: 0;
+    height: 16px;
+    background-color: @clr_darkblue;
+  }
+
+  & button {
+    display: inline-block;
+    color: @clr_white;
+    font-family: @fnt_Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 16px 11px 15px 13px;
+    border: 1px solid @clr_lightgray;
+    background-color: @clr_darkblue;
+
+    &:hover {
+      color: @clr_darkblue;
+      background-color: @clr_lightgray;
+    }
+  }
+}
+
+.page-footer__contact {
+  position: relative;
+  color: @clr_lightgray;
+  font-family: @fnt_Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  margin: 0;
+  padding: 29px 0px 0px 40px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/contacts.png");
+    background-repeat: no-repeat;
+  }
+
+  &--location::before {
+    background-position: -5px -5px;
+  }
+
+  &--phone::before {
+    background-position: -35px -5px;
+  }
+
+  &--email::before {
+    background-position: -65px -5px;
+  }
+
+  & a {
+    color: @clr_lightgray;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.page-footer__copyright {
+  color: @clr_lightgray;
+  font-family: @fnt_DroidSerif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
