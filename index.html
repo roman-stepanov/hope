@@ -116,11 +116,19 @@
             <a class="portfolio__filter-link" href="#">Branding</a>
           </div>
         </div>
-        <div class="portfolio__wrapper  portfolio__wrapper--row">
-          <!-- <img src="img/portfolio/work1.jpg" width="770" height="300" alt=""> -->
-          <img src="img/portfolio/work2.jpg" width="370" height="630" alt="">
-          <!-- <img src="img/portfolio/work3.jpg" width="370" height="300" alt=""> -->
-          <!-- <img src="img/portfolio/work4.jpg" width="370" height="300" alt=""> -->
+        <div id="portfolio-grid-container" class="portfolio__grid-container">
+          <div class="portfolio__grid-item  portfolio__grid-item--wide">
+            <img src="img/portfolio/work1.jpg" width="770" height="300" alt="">
+          </div>
+          <div class="portfolio__grid-item  portfolio__grid-item--high">
+            <img src="img/portfolio/work2.jpg" width="370" height="630" alt="">
+          </div>
+          <div class="portfolio__grid-item  portfolio__grid-item--small">
+            <img src="img/portfolio/work3.jpg" width="370" height="300" alt="">
+          </div>
+          <div class="portfolio__grid-item  portfolio__grid-item--small">
+            <img src="img/portfolio/work4.jpg" width="370" height="300" alt="">
+          </div>
         </div>
         <div class="portfolio__btn-wrapper">
           <a class="btn" href="#">Load More</a>
@@ -475,5 +483,8 @@
       </div>
     </footer>
     <script src="js/jquery.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/common.js"></script>
   </body>
 </html>

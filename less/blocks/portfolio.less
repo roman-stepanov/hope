@@ -37,16 +37,39 @@
   }
 }
 
-.portfolio__wrapper {
+.portfolio__grid-container {
+  margin: 0;
+  padding: 0px 0px 0px 0px;
+  min-height: 660px;
+}
+
+.portfolio__grid-item {
+  margin: 0px 0px 30px 0px;
+
+  &--wide {
+    width: 770px;
+    height: 300px;
+  }
+
+  &--high {
+    width: 370px;
+    height: 630px;
+  }
+
+  &--small {
+    width: 370px;
+    height: 300px;
+  }
+
   & img {
     display: block;
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    height: auto;
   }
 }
 
 .portfolio__btn-wrapper {
   text-align: center;
   margin: 0;
-  padding: 100px 0px 0px 0px;
+  padding: 70px 0px 0px 0px;
 }
