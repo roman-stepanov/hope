@@ -33,6 +33,17 @@ module.exports = function(grunt) {
           ],
           dest: 'build/'
         }]
+      },
+      jquery: {
+        files: [{
+          expand: true,
+          cwd: 'node_modules/jquery/dist/',
+          src: [
+            'jquery.min.js',
+            'jquery.min.map'
+          ],
+          dest: 'build/js/'
+        }]
       }
     },
 
@@ -116,6 +127,7 @@ module.exports = function(grunt) {
     'copy:html',
     'copy:normalize',
     'copy:resources',
+    'copy:jquery',
     'less',
     'postcss',
     'csso'
