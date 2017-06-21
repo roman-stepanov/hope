@@ -53,6 +53,14 @@ module.exports = function(grunt) {
           dest: 'build/js/'
         }]
       },
+      masonry: {
+        files: [{
+          expand: true,
+          cwd: 'node_modules/masonry-layout/dist/',
+          src: 'masonry.pkgd.min.js',
+          dest: 'build/js/'
+        }]
+      },
       js: {
         files: [{
           expand: true,
