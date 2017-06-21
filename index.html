@@ -7,18 +7,18 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <section id="home" class="banner">
-      <div class="banner__container">
+    <section id="home" class="content-section  content-section--gray">
+      <div class="content-section__container  content-section__container--home">
         <h1 class="banner__title">I am <b>John Smith</b></h1>
         <p class="banner__position">
           Professional Graphic Designer And Web Developer
         </p>
         <div class="banner__btn-wrapper">
-          <a class="btn" href="#">View Portfolio</a>
+          <a class="btn" href="#portfolio">View Portfolio</a>
         </div>
       </div>
     </section>
-    <header class="page-header">
+    <header id="page-header" class="page-header">
       <div class="page-header__container">
         <div class="page-header__logo">
           <img class="page-header__logo-img" src="img/logo.png" width="125" height="47" alt="Hope">
@@ -49,363 +49,365 @@
         </nav>
       </div>
     </header>
-    <section id="about" class="content-section">
-      <div class="content-section__container">
-        <div class="content-section__title-wrapper">
-          <h2 class="content-section__title">About Me</h2>
-        </div>
-        <div class="about__wrapper">
-          <img class="about__img" src="img/john-smith.jpg" width="370" height="350" alt="John Smith">
-          <p class="about__text">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
-          </p>
-          <p class="about__text">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-          </p>
-          <div class="about__btn-wrapper">
-            <a class="btn" href="#">Read More</a>
+    <main class="main-content">
+      <section id="about" class="content-section">
+        <div class="content-section__container">
+          <div class="content-section__title-wrapper">
+            <h2 class="content-section__title">About Me</h2>
           </div>
-        </div>
-      </div>
-    </section>
-    <section id="skill" class="content-section  content-section--gray">
-      <div class="content-section__container">
-        <div class="content-section__title-wrapper">
-          <h2 class="content-section__title">My Skill</h2>
-        </div>
-        <div class="skill__progress-bars">
-          <div class="progress-bar">
-            <h3 class="progress-bar__title">Photoshop</h3>
-            <div class="progress-bar__border">
-              <div class="progress-bar__value" style="width: 95%"><span>95%</span></div>
-            </div>
-          </div>
-          <div class="progress-bar">
-            <h3 class="progress-bar__title">Illustrator</h3>
-            <div class="progress-bar__border">
-              <div class="progress-bar__value" style="width: 89%"><span>89%</span></div>
-            </div>
-          </div>
-          <div class="progress-bar">
-            <h3 class="progress-bar__title">WordPress</h3>
-            <div class="progress-bar__border">
-              <div class="progress-bar__value" style="width: 65%"><span>65%</span></div>
-            </div>
-          </div>
-          <div class="progress-bar">
-            <h3 class="progress-bar__title">HTML &amp; CSS</h3>
-            <div class="progress-bar__border">
-              <div class="progress-bar__value" style="width: 97%"><span>97%</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="portfolio" class="content-section">
-      <div class="content-section__container">
-        <div class="content-section__title-wrapper">
-          <h2 class="content-section__title">My Portfolio</h2>
-        </div>
-        <div id="portfolio-filter" class="portfolio__filter">
-          <div class="portfolio__filter-wrapper">
-            <a class="portfolio__filter-link  portfolio__filter-link--active" href="#">All</a>
-            <a class="portfolio__filter-link" href="#">Graphic Design</a>
-            <a class="portfolio__filter-link" href="#">Advertising</a>
-            <a class="portfolio__filter-link" href="#">Web Design</a>
-            <a class="portfolio__filter-link" href="#">Logo</a>
-            <a class="portfolio__filter-link" href="#">Branding</a>
-          </div>
-        </div>
-        <div id="portfolio-grid" class="portfolio__grid-container">
-          <div class="portfolio__grid-item  portfolio__grid-item--wide">
-            <img src="img/portfolio/work1.jpg" width="770" height="300" alt="">
-          </div>
-          <div class="portfolio__grid-item  portfolio__grid-item--high">
-            <img src="img/portfolio/work2.jpg" width="370" height="630" alt="">
-          </div>
-          <div class="portfolio__grid-item  portfolio__grid-item--small">
-            <img src="img/portfolio/work3.jpg" width="370" height="300" alt="">
-          </div>
-          <div class="portfolio__grid-item  portfolio__grid-item--small">
-            <img src="img/portfolio/work4.jpg" width="370" height="300" alt="">
-          </div>
-        </div>
-        <div class="portfolio__btn-wrapper">
-          <a class="btn" href="#">Load More</a>
-        </div>
-      </div>
-    </section>
-    <section id="achivement" class="content-section  content-section--gray">
-      <div class="content-section__container">
-        <div class="content-section__title-wrapper">
-          <h2 class="content-section__title">My Achivement</h2>
-        </div>
-        <ul class="achivement__list">
-          <li class="achivement__item  achivement__item--project">
-            <b>1357</b> Finished Project
-          </li>
-          <li class="achivement__item  achivement__item--happy">
-            <b>135</b> Happy Client
-          </li>
-          <li class="achivement__item  achivement__item--award">
-            <b>85</b> Award Win
-          </li>
-          <li class="achivement__item  achivement__item--rating">
-            <b>95%</b> Client Rating
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section id="blog" class="content-section">
-      <div class="content-section__container">
-        <div class="content-section__title-wrapper">
-          <h2 class="content-section__title">Latest Blog</h2>
-        </div>
-        <div class="blog__wrapper">
-          <article class="blog-entry  blog-entry--page">
-            <img class="blog-entry__img  blog-entry__img--page" src="img/blog/blog-entry1.jpg" width="570" height="370" alt="">
-            <header class="blog-entry__header  blog-entry__header--page">
-              <h3 class="blog-entry__title  blog-entry__title--page"><a href="#">How To Make A Best Design With Photoshop</a></h3>
-              <div class="blog-entry__info  blog-entry__info--page">
-                <span class="blog-entry__writer  blog-entry__writer--page">Admin</span> <span class="blog-entry__date  blog-entry__date--page">22 August, 2016</span>
-              </div>
-            </header>
-            <p class="blog-entry__text  blog-entry__text--page">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only..........
+          <div class="about__wrapper">
+            <img class="about__img" src="img/john-smith.jpg" width="370" height="350" alt="John Smith">
+            <p class="about__text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
             </p>
-            <footer class="blog-entry__footer  blog-entry__footer--page">
-              <div class="blog-entry__btn-wrapper">
-                <a class="blog-entry__btn  blog-entry__btn--comment" href="#">comment</a>
-                <a class="blog-entry__btn  blog-entry__btn--like" href="#">like</a>
-              </div>
-              <a class="blog-entry__read-more" href="#">Read more</a>
-            </footer>
-          </article>
-          <article class="blog-entry  blog-entry--page">
-            <img class="blog-entry__img  blog-entry__img--page" src="img/blog/blog-entry2.jpg" width="570" height="370" alt="">
-            <header class="blog-entry__header  blog-entry__header--page">
-              <h3 class="blog-entry__title  blog-entry__title--page"><a href="#">How To Make A Best Design With Photoshop</a></h3>
-              <div class="blog-entry__info  blog-entry__info--page">
-                <span class="blog-entry__writer  blog-entry__writer--page">Admin</span> <span class="blog-entry__date  blog-entry__date--page">22 August, 2016</span>
-              </div>
-            </header>
-            <p class="blog-entry__text  blog-entry__text--page">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only..........
+            <p class="about__text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
             </p>
-            <footer class="blog-entry__footer  blog-entry__footer--page">
-              <div class="blog-entry__btn-wrapper">
-                <a class="blog-entry__btn  blog-entry__btn--comment" href="#">comment</a>
-                <a class="blog-entry__btn  blog-entry__btn--like" href="#">like</a>
+            <div class="about__btn-wrapper">
+              <a class="btn" href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="skill" class="content-section  content-section--gray">
+        <div class="content-section__container">
+          <div class="content-section__title-wrapper">
+            <h2 class="content-section__title">My Skill</h2>
+          </div>
+          <div class="skill__progress-bars">
+            <div class="progress-bar">
+              <h3 class="progress-bar__title">Photoshop</h3>
+              <div class="progress-bar__border">
+                <div class="progress-bar__value" style="width: 95%"><span>95%</span></div>
               </div>
-              <a class="blog-entry__read-more" href="#">Read more</a>
-            </footer>
-          </article>
-        </div>
-        <div class="blog__btn-wrapper">
-          <a class="btn" href="#">More Blog</a>
-        </div>
-      </div>
-    </section>
-    <section id="testimonial" class="content-section  content-section--gray">
-      <div class="content-section__container">
-        <div class="content-section__title-wrapper">
-          <h2 class="content-section__title">Testimonial</h2>
-        </div>
-        <div class="slider">
-          <div class="slider__slides">
-            <div class="slider__slide">
-              <div class="testimonial__user">
-                <img class="testimonial__user-img" src="img/testimonial/user01.jpg" width="70" height="70" alt="">
-                <h3 class="testimonial__user-name">Jonathon Smith</h3>
-                <span class="testimonial__user-position">CEO, Td center</span>
+            </div>
+            <div class="progress-bar">
+              <h3 class="progress-bar__title">Illustrator</h3>
+              <div class="progress-bar__border">
+                <div class="progress-bar__value" style="width: 89%"><span>89%</span></div>
               </div>
-              <p class="testimonial__text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+            </div>
+            <div class="progress-bar">
+              <h3 class="progress-bar__title">WordPress</h3>
+              <div class="progress-bar__border">
+                <div class="progress-bar__value" style="width: 65%"><span>65%</span></div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <h3 class="progress-bar__title">HTML &amp; CSS</h3>
+              <div class="progress-bar__border">
+                <div class="progress-bar__value" style="width: 97%"><span>97%</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio" class="content-section">
+        <div class="content-section__container">
+          <div class="content-section__title-wrapper">
+            <h2 class="content-section__title">My Portfolio</h2>
+          </div>
+          <div id="portfolio-filter" class="portfolio__filter">
+            <div class="portfolio__filter-wrapper">
+              <a class="portfolio__filter-link  portfolio__filter-link--active" href="#">All</a>
+              <a class="portfolio__filter-link" href="#">Graphic Design</a>
+              <a class="portfolio__filter-link" href="#">Advertising</a>
+              <a class="portfolio__filter-link" href="#">Web Design</a>
+              <a class="portfolio__filter-link" href="#">Logo</a>
+              <a class="portfolio__filter-link" href="#">Branding</a>
+            </div>
+          </div>
+          <div id="portfolio-grid" class="portfolio__grid-container">
+            <div class="portfolio__grid-item  portfolio__grid-item--wide">
+              <img src="img/portfolio/work1.jpg" width="770" height="300" alt="">
+            </div>
+            <div class="portfolio__grid-item  portfolio__grid-item--high">
+              <img src="img/portfolio/work2.jpg" width="370" height="630" alt="">
+            </div>
+            <div class="portfolio__grid-item  portfolio__grid-item--small">
+              <img src="img/portfolio/work3.jpg" width="370" height="300" alt="">
+            </div>
+            <div class="portfolio__grid-item  portfolio__grid-item--small">
+              <img src="img/portfolio/work4.jpg" width="370" height="300" alt="">
+            </div>
+          </div>
+          <div class="portfolio__btn-wrapper">
+            <a class="btn" href="#">Load More</a>
+          </div>
+        </div>
+      </section>
+      <section id="achivement" class="content-section  content-section--gray">
+        <div class="content-section__container">
+          <div class="content-section__title-wrapper">
+            <h2 class="content-section__title">My Achivement</h2>
+          </div>
+          <ul class="achivement__list">
+            <li class="achivement__item  achivement__item--project">
+              <b>1357</b> Finished Project
+            </li>
+            <li class="achivement__item  achivement__item--happy">
+              <b>135</b> Happy Client
+            </li>
+            <li class="achivement__item  achivement__item--award">
+              <b>85</b> Award Win
+            </li>
+            <li class="achivement__item  achivement__item--rating">
+              <b>95%</b> Client Rating
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="blog" class="content-section">
+        <div class="content-section__container">
+          <div class="content-section__title-wrapper">
+            <h2 class="content-section__title">Latest Blog</h2>
+          </div>
+          <div class="blog__wrapper">
+            <article class="blog-entry  blog-entry--page">
+              <img class="blog-entry__img  blog-entry__img--page" src="img/blog/blog-entry1.jpg" width="570" height="370" alt="">
+              <header class="blog-entry__header  blog-entry__header--page">
+                <h3 class="blog-entry__title  blog-entry__title--page"><a href="#">How To Make A Best Design With Photoshop</a></h3>
+                <div class="blog-entry__info  blog-entry__info--page">
+                  <span class="blog-entry__writer  blog-entry__writer--page">Admin</span> <span class="blog-entry__date  blog-entry__date--page">22 August, 2016</span>
+                </div>
+              </header>
+              <p class="blog-entry__text  blog-entry__text--page">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only..........
               </p>
-            </div>
+              <footer class="blog-entry__footer  blog-entry__footer--page">
+                <div class="blog-entry__btn-wrapper">
+                  <a class="blog-entry__btn  blog-entry__btn--comment" href="#">comment</a>
+                  <a class="blog-entry__btn  blog-entry__btn--like" href="#">like</a>
+                </div>
+                <a class="blog-entry__read-more" href="#">Read more</a>
+              </footer>
+            </article>
+            <article class="blog-entry  blog-entry--page">
+              <img class="blog-entry__img  blog-entry__img--page" src="img/blog/blog-entry2.jpg" width="570" height="370" alt="">
+              <header class="blog-entry__header  blog-entry__header--page">
+                <h3 class="blog-entry__title  blog-entry__title--page"><a href="#">How To Make A Best Design With Photoshop</a></h3>
+                <div class="blog-entry__info  blog-entry__info--page">
+                  <span class="blog-entry__writer  blog-entry__writer--page">Admin</span> <span class="blog-entry__date  blog-entry__date--page">22 August, 2016</span>
+                </div>
+              </header>
+              <p class="blog-entry__text  blog-entry__text--page">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only..........
+              </p>
+              <footer class="blog-entry__footer  blog-entry__footer--page">
+                <div class="blog-entry__btn-wrapper">
+                  <a class="blog-entry__btn  blog-entry__btn--comment" href="#">comment</a>
+                  <a class="blog-entry__btn  blog-entry__btn--like" href="#">like</a>
+                </div>
+                <a class="blog-entry__read-more" href="#">Read more</a>
+              </footer>
+            </article>
           </div>
-          <div class="slider__controls">
-            <input id="testimonial1" class="slider__control-radio" type="radio" name="toggle-testimonial">
-            <label for="testimonial1" class="slider__control-label"></label>
-            <input id="testimonial2" class="slider__control-radio" type="radio" name="toggle-testimonial" checked>
-            <label for="testimonial2" class="slider__control-label"></label>
-            <input id="testimonial3" class="slider__control-radio" type="radio" name="toggle-testimonial">
-            <label for="testimonial3" class="slider__control-label"></label>
+          <div class="blog__btn-wrapper">
+            <a class="btn" href="#">More Blog</a>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="services" class="content-section">
-      <div class="content-section__container">
-        <div class="content-section__title-wrapper">
-          <h2 class="content-section__title">My Services</h2>
-        </div>
-        <ul class="services__items">
-          <li class="services__item  services__item--web-design">
-            <h3 class="services__title">Web Design PSD</h3>
-            <p class="services__desc">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-            </p>
-          </li>
-          <li class="services__item  services__item--graphic-design">
-            <h3 class="services__title">Graphic Design</h3>
-            <p class="services__desc">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-            </p>
-          </li>
-          <li class="services__item  services__item--web-development">
-            <h3 class="services__title">Web Development</h3>
-            <p class="services__desc">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-            </p>
-          </li>
-          <li class="services__item  services__item--branding">
-            <h3 class="services__title">Branding</h3>
-            <p class="services__desc">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-            </p>
-          </li>
-          <li class="services__item  services__item--logo-design">
-            <h3 class="services__title">Logo Design</h3>
-            <p class="services__desc">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-            </p>
-          </li>
-          <li class="services__item  services__item--marketing">
-            <h3 class="services__title">Marketing</h3>
-            <p class="services__desc">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-            </p>
-          </li>
-        </ul>
-        <div class="services__btn-wrapper">
-          <a class="btn" href="#">Load More</a>
-        </div>
-      </div>
-    </section>
-    <section id="clients" class="content-section  content-section--gray">
-      <div class="content-section__container">
-        <div class="content-section__title-wrapper">
-          <h2 class="content-section__title">My Client</h2>
-        </div>
-        <div class="slider">
-          <div class="slider__slides">
-            <div class="slider__slide">
-              <div class="clients__wrapper">
-                <img class="clients__logo-img" src="img/clients/client1.jpg" width="168" height="98" alt="">
-                <img class="clients__logo-img" src="img/clients/client2.jpg" width="168" height="98" alt="">
-                <img class="clients__logo-img" src="img/clients/client3.jpg" width="168" height="98" alt="">
-                <img class="clients__logo-img" src="img/clients/client4.jpg" width="168" height="98" alt="">
-                <img class="clients__logo-img" src="img/clients/client5.jpg" width="168" height="98" alt="">
-                <img class="clients__logo-img" src="img/clients/client6.jpg" width="168" height="98" alt="">
+      </section>
+      <section id="testimonial" class="content-section  content-section--gray">
+        <div class="content-section__container">
+          <div class="content-section__title-wrapper">
+            <h2 class="content-section__title">Testimonial</h2>
+          </div>
+          <div class="slider">
+            <div class="slider__slides">
+              <div class="slider__slide">
+                <div class="testimonial__user">
+                  <img class="testimonial__user-img" src="img/testimonial/user01.jpg" width="70" height="70" alt="">
+                  <h3 class="testimonial__user-name">Jonathon Smith</h3>
+                  <span class="testimonial__user-position">CEO, Td center</span>
+                </div>
+                <p class="testimonial__text">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                </p>
               </div>
             </div>
-          </div>
-          <div class="slider__controls">
-            <input id="my-clients1" class="slider__control-radio" type="radio" name="toggle-clients">
-            <label for="my-clients1" class="slider__control-label"></label>
-            <input id="my-clients2" class="slider__control-radio" type="radio" name="toggle-clients" checked>
-            <label for="my-clients2" class="slider__control-label"></label>
-            <input id="my-clients3" class="slider__control-radio" type="radio" name="toggle-clients">
-            <label for="my-clients3" class="slider__control-label"></label>
+            <div class="slider__controls">
+              <input id="testimonial1" class="slider__control-radio" type="radio" name="toggle-testimonial">
+              <label for="testimonial1" class="slider__control-label"></label>
+              <input id="testimonial2" class="slider__control-radio" type="radio" name="toggle-testimonial" checked>
+              <label for="testimonial2" class="slider__control-label"></label>
+              <input id="testimonial3" class="slider__control-radio" type="radio" name="toggle-testimonial">
+              <label for="testimonial3" class="slider__control-label"></label>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="price-plans" class="content-section">
-      <div class="content-section__container">
-        <div class="content-section__title-wrapper">
-          <h2 class="content-section__title">Price Plan</h2>
+      </section>
+      <section id="services" class="content-section">
+        <div class="content-section__container">
+          <div class="content-section__title-wrapper">
+            <h2 class="content-section__title">My Services</h2>
+          </div>
+          <ul class="services__items">
+            <li class="services__item  services__item--web-design">
+              <h3 class="services__title">Web Design PSD</h3>
+              <p class="services__desc">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+              </p>
+            </li>
+            <li class="services__item  services__item--graphic-design">
+              <h3 class="services__title">Graphic Design</h3>
+              <p class="services__desc">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+              </p>
+            </li>
+            <li class="services__item  services__item--web-development">
+              <h3 class="services__title">Web Development</h3>
+              <p class="services__desc">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+              </p>
+            </li>
+            <li class="services__item  services__item--branding">
+              <h3 class="services__title">Branding</h3>
+              <p class="services__desc">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+              </p>
+            </li>
+            <li class="services__item  services__item--logo-design">
+              <h3 class="services__title">Logo Design</h3>
+              <p class="services__desc">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+              </p>
+            </li>
+            <li class="services__item  services__item--marketing">
+              <h3 class="services__title">Marketing</h3>
+              <p class="services__desc">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+              </p>
+            </li>
+          </ul>
+          <div class="services__btn-wrapper">
+            <a class="btn" href="#">Load More</a>
+          </div>
         </div>
-        <div class="plans__wrapper">
-          <article class="price-plan">
-            <header class="price-plan__header">
-              <h3 class="price-plan__title">Basic</h3>
-              <div class="price-plan__price">
-                <sup>$</sup>99<sub>/Month</sub>
+      </section>
+      <section id="clients" class="content-section  content-section--gray">
+        <div class="content-section__container">
+          <div class="content-section__title-wrapper">
+            <h2 class="content-section__title">My Client</h2>
+          </div>
+          <div class="slider">
+            <div class="slider__slides">
+              <div class="slider__slide">
+                <div class="clients__wrapper">
+                  <img class="clients__logo-img" src="img/clients/client1.jpg" width="168" height="98" alt="">
+                  <img class="clients__logo-img" src="img/clients/client2.jpg" width="168" height="98" alt="">
+                  <img class="clients__logo-img" src="img/clients/client3.jpg" width="168" height="98" alt="">
+                  <img class="clients__logo-img" src="img/clients/client4.jpg" width="168" height="98" alt="">
+                  <img class="clients__logo-img" src="img/clients/client5.jpg" width="168" height="98" alt="">
+                  <img class="clients__logo-img" src="img/clients/client6.jpg" width="168" height="98" alt="">
+                </div>
               </div>
-            </header>
-            <ul class="price-plan__features">
-              <li class="price-plan__feature">10 projects</li>
-              <li class="price-plan__feature">30GB storage</li>
-              <li class="price-plan__feature">100 clients</li>
-              <li class="price-plan__feature">Full support</li>
-              <li class="price-plan__feature">Small social media</li>
-              <li class="price-plan__feature">Small package</li>
-            </ul>
-            <footer class="price-plan__footer">
-              <a class="btn" href="#">Get Started</a>
-            </footer>
-          </article>
-          <article class="price-plan">
-            <header class="price-plan__header">
-              <h3 class="price-plan__title">Silver</h3>
-              <div class="price-plan__price">
-                <sup>$</sup>120<sub>/Month</sub>
-              </div>
-            </header>
-            <ul class="price-plan__features">
-              <li class="price-plan__feature">10 projects</li>
-              <li class="price-plan__feature">30GB storage</li>
-              <li class="price-plan__feature">100 clients</li>
-              <li class="price-plan__feature">Full support</li>
-              <li class="price-plan__feature">Small social media</li>
-              <li class="price-plan__feature">Small package</li>
-            </ul>
-            <footer class="price-plan__footer">
-              <a class="btn" href="#">Get Started</a>
-            </footer>
-          </article>
-          <article class="price-plan">
-            <header class="price-plan__header">
-              <h3 class="price-plan__title">Gold</h3>
-              <div class="price-plan__price">
-                <sup>$</sup>200<sub>/Month</sub>
-              </div>
-            </header>
-            <ul class="price-plan__features">
-              <li class="price-plan__feature">10 projects</li>
-              <li class="price-plan__feature">30GB storage</li>
-              <li class="price-plan__feature">100 clients</li>
-              <li class="price-plan__feature">Full support</li>
-              <li class="price-plan__feature">Small social media</li>
-              <li class="price-plan__feature">Small package</li>
-            </ul>
-            <footer class="price-plan__footer">
-              <a class="btn" href="#">Get Started</a>
-            </footer>
-          </article>
+            </div>
+            <div class="slider__controls">
+              <input id="my-clients1" class="slider__control-radio" type="radio" name="toggle-clients">
+              <label for="my-clients1" class="slider__control-label"></label>
+              <input id="my-clients2" class="slider__control-radio" type="radio" name="toggle-clients" checked>
+              <label for="my-clients2" class="slider__control-label"></label>
+              <input id="my-clients3" class="slider__control-radio" type="radio" name="toggle-clients">
+              <label for="my-clients3" class="slider__control-label"></label>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-    <section id="contact" class="content-section  content-section--gray">
-      <div class="content-section__container">
-        <div class="content-section__title-wrapper">
-          <h2 class="content-section__title">Contact Me</h2>
+      </section>
+      <section id="price-plans" class="content-section">
+        <div class="content-section__container">
+          <div class="content-section__title-wrapper">
+            <h2 class="content-section__title">Price Plan</h2>
+          </div>
+          <div class="plans__wrapper">
+            <article class="price-plan">
+              <header class="price-plan__header">
+                <h3 class="price-plan__title">Basic</h3>
+                <div class="price-plan__price">
+                  <sup>$</sup>99<sub>/Month</sub>
+                </div>
+              </header>
+              <ul class="price-plan__features">
+                <li class="price-plan__feature">10 projects</li>
+                <li class="price-plan__feature">30GB storage</li>
+                <li class="price-plan__feature">100 clients</li>
+                <li class="price-plan__feature">Full support</li>
+                <li class="price-plan__feature">Small social media</li>
+                <li class="price-plan__feature">Small package</li>
+              </ul>
+              <footer class="price-plan__footer">
+                <a class="btn" href="#">Get Started</a>
+              </footer>
+            </article>
+            <article class="price-plan">
+              <header class="price-plan__header">
+                <h3 class="price-plan__title">Silver</h3>
+                <div class="price-plan__price">
+                  <sup>$</sup>120<sub>/Month</sub>
+                </div>
+              </header>
+              <ul class="price-plan__features">
+                <li class="price-plan__feature">10 projects</li>
+                <li class="price-plan__feature">30GB storage</li>
+                <li class="price-plan__feature">100 clients</li>
+                <li class="price-plan__feature">Full support</li>
+                <li class="price-plan__feature">Small social media</li>
+                <li class="price-plan__feature">Small package</li>
+              </ul>
+              <footer class="price-plan__footer">
+                <a class="btn" href="#">Get Started</a>
+              </footer>
+            </article>
+            <article class="price-plan">
+              <header class="price-plan__header">
+                <h3 class="price-plan__title">Gold</h3>
+                <div class="price-plan__price">
+                  <sup>$</sup>200<sub>/Month</sub>
+                </div>
+              </header>
+              <ul class="price-plan__features">
+                <li class="price-plan__feature">10 projects</li>
+                <li class="price-plan__feature">30GB storage</li>
+                <li class="price-plan__feature">100 clients</li>
+                <li class="price-plan__feature">Full support</li>
+                <li class="price-plan__feature">Small social media</li>
+                <li class="price-plan__feature">Small package</li>
+              </ul>
+              <footer class="price-plan__footer">
+                <a class="btn" href="#">Get Started</a>
+              </footer>
+            </article>
+          </div>
         </div>
-        <form class="contact__form" action="#" method="post">
-          <div class="contact__input-wrapper">
-            <label for="name" class="contact__label">Name (Required)</label>
-            <input id="name" class="contact__input" type="text" name="name" value="" required>
+      </section>
+      <section id="contact" class="content-section  content-section--gray">
+        <div class="content-section__container">
+          <div class="content-section__title-wrapper">
+            <h2 class="content-section__title">Contact Me</h2>
           </div>
-          <div class="contact__input-wrapper">
-            <label for="email" class="contact__label">Your Email (Required)</label>
-            <input id="email" class="contact__input" type="email" name="email" value="" required>
-          </div>
-          <div class="contact__input-wrapper  contact__input-wrapper--full-width">
-            <label for="subject" class="contact__label">Subject (Required)</label>
-            <input id="subject" class="contact__input" type="text" name="subject" value="" required>
-          </div>
-          <div class="contact__input-wrapper  contact__input-wrapper--full-width">
-            <label for="message" class="contact__label">Message</label>
-            <textarea id="message" class="contact__input  contact__input--textarea" name="message"></textarea>
-          </div>
-          <div class="contact__btn-wrapper">
-            <button class="btn" type="submit" name="submit">Send Message</button>
-          </div>
-        </form>
-      </div>
-    </section>
+          <form class="contact__form" action="#" method="post">
+            <div class="contact__input-wrapper">
+              <label for="name" class="contact__label">Name (Required)</label>
+              <input id="name" class="contact__input" type="text" name="name" value="" required>
+            </div>
+            <div class="contact__input-wrapper">
+              <label for="email" class="contact__label">Your Email (Required)</label>
+              <input id="email" class="contact__input" type="email" name="email" value="" required>
+            </div>
+            <div class="contact__input-wrapper  contact__input-wrapper--full-width">
+              <label for="subject" class="contact__label">Subject (Required)</label>
+              <input id="subject" class="contact__input" type="text" name="subject" value="" required>
+            </div>
+            <div class="contact__input-wrapper  contact__input-wrapper--full-width">
+              <label for="message" class="contact__label">Message</label>
+              <textarea id="message" class="contact__input  contact__input--textarea" name="message"></textarea>
+            </div>
+            <div class="contact__btn-wrapper">
+              <button class="btn" type="submit" name="submit">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
     <footer class="page-footer">
       <div class="page-footer__top-part">
         <div class="page-footer__container  page-footer__container--top-part">

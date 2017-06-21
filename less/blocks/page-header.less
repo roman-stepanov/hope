@@ -1,6 +1,14 @@
 .page-header {
   border-bottom: 1px solid rgba(5, 5, 5, 0.2);
+  background-color: @clr_white;
   box-shadow: 0px 5px 5px 0px rgba(5, 5, 5, 0.2);
+
+  &--fixed {
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    width: 100%;
+  }
 }
 
 .page-header__container {
