@@ -51,6 +51,15 @@ $(document).ready(function() {
     updateNavigation();
   };
 
+  var onClickNavigation = function(evt) {
+    evt.preventDefault();
+    var target = $(this.hash);
+
+    $('body, html').animate(
+      {'scrollTop': target.offset().top - pageHeaderHeight + 2}, 600
+    );
+  };
+
   var onClickPortfolioFilter = function(evt) {
     evt.preventDefault();
     var target = $(this);
@@ -71,5 +80,7 @@ $(document).ready(function() {
   });
 
   $(window).on('scroll', onScrollWindow);
+  navigation.find('a').on('click', onClickNavigation);
+  $('#home').find('a[href="#portfolio"]').on('click', onClickNavigation);
   portfolioFilter.find('a').on('click', onClickPortfolioFilter);
 });
