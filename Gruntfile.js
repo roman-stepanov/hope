@@ -44,6 +44,21 @@ module.exports = function(grunt) {
           ],
           dest: 'build/js/'
         }]
+      },
+      imagesloaded: {
+        files: [{
+          expand: true,
+          cwd: 'node_modules/imagesloaded/',
+          src: 'imagesloaded.pkgd.min.js',
+          dest: 'build/js/'
+        }]
+      },
+      js: {
+        files: [{
+          expand: true,
+          src: 'js/**/*.js',
+          dest: 'build/'
+        }]
       }
     },
 
@@ -90,7 +105,8 @@ module.exports = function(grunt) {
         bsFiles: {
           src: [
             'build/*.html',
-            'build/css/*.css'
+            'build/css/*.css',
+            'build/js/**/*.js'
           ]
         },
         options: {
@@ -118,16 +134,17 @@ module.exports = function(grunt) {
         options: {
           spawn: false
         }
+      },
+      js: {
+        files: 'js/**/*.js',
+        tasks: 'copy:js'
       }
     }
   });
 
   grunt.registerTask('build', [
     'clean',
-    'copy:html',
-    'copy:normalize',
-    'copy:resources',
-    'copy:jquery',
+    'copy',
     'less',
     'postcss',
     'csso'
